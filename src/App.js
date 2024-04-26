@@ -4,6 +4,8 @@ import Home from "./components/Home";
 import Footer from "./components/Footer"
 import Videos from "./components/Videos";
 import Upload from "./components/Upload";
+import LogIn from "./components/LogIn";
+import SignUp from "./components/SignUp";
 
 function App() {
 return <Router>
@@ -12,6 +14,9 @@ return <Router>
   <Route path="/" element={<Home />} />
   <Route path="/videos" element={<Videos />} />
   <Route path="/upload" element={<Upload />} />
+  <Route path="/login" element={<LogIn />} />
+  <Route path="/signup" element={<SignUp />} />
+
 
 
 </Routes>
