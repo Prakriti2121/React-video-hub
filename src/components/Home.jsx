@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Heading, Image} from '@chakra-ui/react';
+import {Box, Container, Heading, Image, Stack, Text} from '@chakra-ui/react';
 import {Carousel} from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import img1 from '../assets/1.jpg';
@@ -19,9 +19,22 @@ size: "3xl",
 }
 
 const Home = () => {
-  return <Box>
+  return (
+  <Box>
 <MyCarousel />
-  </Box>;
+<Container maxW={'container.xl'} minH={'100vh'} p={'16'} >
+<Heading textTransform={'uppercase'} py="2" w={'fit-content'} borderBottom={'2px solid'} m={'auto'}>Services</Heading>
+
+<Stack h="full" p={'4'} alignItems={'center'} direction={['column', 'row']}>
+    <Image src= {img5} filter={'hue-rotate(-130deg)'} h={["40", "400"]} />
+    <Text letterSpacing={"widest"} lineHeight={"190%"} p={["4","16"]} textAlign={"center"}>
+    Discover, watch, and share your favorite videos with our intuitive video hub app. With a vast library of content spanning every genre imaginable, from entertainment and education to lifestyle and sports, there's something for everyone. Enjoy seamless streaming in stunning HD quality, whether you're on your smartphone, tablet, or smart TV. Dive into curated playlists tailored to your interests, or explore trending videos to stay up-to-date with what's hot. Plus, our personalized recommendations ensure you never miss out on must-watch content. Experience the ultimate video entertainment hub, right at your fingertips.
+    </Text>
+
+</Stack>
+</Container>
+  </Box>
+  ); 
 };
 
 const MyCarousel = () => (
