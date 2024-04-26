@@ -10,6 +10,7 @@ const Header = () => {
 top={"4"}
 left={"4"}
 colorScheme="purple"
+zIndex={'overlay'}
  p={"0"}
  w={"10"}
  h={"10"}
